@@ -18,7 +18,17 @@ function SacarResto()
 	resto = (dividendo % divisor);
 
 	alert("El resto es de: " + resto);
+	
+	/*testing
+	var dato;
 
-
-
+	dato=parseInt(3);//ok
+	dato=parseInt("z999");//NaN
+	dato=parseInt("");//NaN
+	dato=parseInt("666z");// solo 666
+	dato=parseInt("66z7");//solo 66
+	dato=parseInt("zz");//NaN
+	dato=parseInt("3");//3
+	dato=parseInt(lalala);//error
+	*/
 }
