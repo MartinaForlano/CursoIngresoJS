@@ -12,5 +12,29 @@ function mostrar()
 
 
 	alert("Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años");
+
+	/*
+	var nombreIngresado;
+	var edadIngresada;
+	//entrada
+	edadIngresada=33;	
+
+	nombreIngresado=prompt("ingrese su nombre");
+
+	edadIngresada=txtIdEdad.value;
+	edadIngresada=document.getElementById('txtIdEdad').value;
+
+
+	//salida
+	alert(nombreIngresado);
+	alert("mensaje");
+	alert("mensaje "+ nombreIngresado);
+
+	txtIdEdad.value="texto";
+	txtIdEdad.value=33;
+	txtIdEdad.value=edadIngresada;
+	document.getElementById('txtIdEdad').value=edadIngresada;
+
+	*/
 }
 
