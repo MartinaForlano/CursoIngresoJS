@@ -4,21 +4,19 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	var numeroUno;
-	var numeroDos;
+	var primerNumero;
+	var segundoNumero;
 	var suma;
 
-	//tomamos el dato
-	numeroUno = txtIdNumeroUno.value;
-	numeroDos = txtIdNumeroDos.value;
+	primerNumero = txtIdNumeroUno.value;
+	primerNumero = parseInt (primerNumero);
 
-	//parseInt devuelve el dato transformado
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
+	segundoNumero = txtIdNumeroDos.value;
+	segundoNumero = parseInt(segundoNumero);
 
-	suma = (numeroUno + numeroDos);
+	suma = primerNumero + segundoNumero;
 
-	alert("La suma es de: " + suma);
-	
+	alert("La suma es de: " +suma);
+
 }
 

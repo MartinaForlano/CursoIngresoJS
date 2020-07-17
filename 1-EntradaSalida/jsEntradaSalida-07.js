@@ -5,77 +5,69 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var numeroUno;
-	var numeroDos;
+	var primerNumero;
+	var segundoNumero;
 	var suma;
 
-	//tomamos el dato
-	numeroUno = txtIdNumeroUno.value;
-	numeroDos = txtIdNumeroDos.value;
+	primerNumero = txtIdNumeroUno.value;
+	primerNumero = parseInt (primerNumero);
 
-	//parseInt devuelve el dato transformado
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
+	segundoNumero = txtIdNumeroDos.value;
+	segundoNumero = parseInt(segundoNumero);
 
-	suma = (numeroUno + numeroDos);
+	suma = primerNumero + segundoNumero;
 
-	alert("La suma es de: " + suma);	
+	alert("La suma es de: " +suma);
 }
 
 function restar()
 {
-	var numeroUno;
-	var numeroDos;
+	var primerNumero;
+	var segundoNumero;
 	var resta;
 
-	//tomamos el dato
-	numeroUno = txtIdNumeroUno.value;
-	numeroDos = txtIdNumeroDos.value;
+	primerNumero = txtIdNumeroUno.value;
+	primerNumero = parseInt (primerNumero);
 
-	//parseInt devuelve el dato transformado
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
+	segundoNumero = txtIdNumeroDos.value;
+	segundoNumero = parseInt(segundoNumero);
 
-	resta = (numeroUno - numeroDos);
+	resta = primerNumero - segundoNumero;
 
-	alert("La resta es de: " + resta);
+	alert("La resta es de: " +resta);
 }
 
 function multiplicar()
 { 
-	var numeroUno;
-	var numeroDos;
+	var primerNumero;
+	var segundoNumero;
 	var multiplicación;
 
-	//tomamos el dato
-	numeroUno = txtIdNumeroUno.value;
-	numeroDos = txtIdNumeroDos.value;
+	primerNumero = txtIdNumeroUno.value;
+	primerNumero = parseInt (primerNumero);
 
-	//parseInt devuelve el dato transformado
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
+	segundoNumero = txtIdNumeroDos.value;
+	segundoNumero = parseInt(segundoNumero);
 
-	multiplicación = (numeroUno * numeroDos);
+	multiplicación = primerNumero * segundoNumero;
 
-	alert("La multiplicación es de: " + multiplicación);
+	alert("La multiplicación es de: " +multiplicación);
 }
 
 function dividir()
 {
-	var numeroUno;
-	var numeroDos;
+	var primerNumero;
+	var segundoNumero;
 	var división;
 
-	//tomamos el dato
-	numeroUno = txtIdNumeroUno.value;
-	numeroDos = txtIdNumeroDos.value;
+	primerNumero = txtIdNumeroUno.value;
+	primerNumero = parseInt (primerNumero);
 
-	//parseInt devuelve el dato transformado
-	numeroUno = parseInt(numeroUno);
-	numeroDos = parseInt(numeroDos);
+	segundoNumero = txtIdNumeroDos.value;
+	segundoNumero = parseInt(segundoNumero);
 
-	división = (numeroUno / numeroDos);
+	división = primerNumero / segundoNumero;
 
-	alert("La división es de: " + división);
+	alert("La división es de: " +división);
 }
 
