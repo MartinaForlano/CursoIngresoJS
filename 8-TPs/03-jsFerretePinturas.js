@@ -11,3 +11,10 @@ function CentigradosFahrenheit ()
 {
 	
 }
+
+/*
+( °C × 9/5) + 32 =  °F
+( °F − 32) × 5/9 =  °C
+la primera es de celcius a farenheit
+y el segundo es de farenheit a celcius
+*/

@@ -19,5 +19,6 @@ function sumar()
 	suma = (numeroUno + numeroDos);
 
 	alert("La suma es de: " + suma);
+	
 }
 

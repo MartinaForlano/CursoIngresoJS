@@ -20,4 +20,5 @@ function mostrarAumento()
 
 	resultado = (sueldo + aumentoImporte);
 	txtIdResultado.value = resultado;
+	
 }
