@@ -1,3 +1,4 @@
+//Forlano, ejercicio 7.
 function mostrar()
 {
 	var edadIngresada;

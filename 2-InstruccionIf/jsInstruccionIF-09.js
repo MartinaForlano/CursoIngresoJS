@@ -1,3 +1,4 @@
+//Forlano, ejercicio 9.
 function mostrar()
 {
 	var numeroRandom;

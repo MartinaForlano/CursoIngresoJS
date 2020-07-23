@@ -1,3 +1,4 @@
+//Forlano, ejercicio 10.
 function mostrar()
 {
 	var notaRandom;
