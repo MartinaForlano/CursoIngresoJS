@@ -11,10 +11,10 @@ function SacarResto()
 	var divisor;
 	var resto;
 
-	primerNumero = txtIdNumeroUno.value;
+	//primerNumero = txtIdNumeroUno.value;
 	primerNumero = parseInt (primerNumero);
 
-	segundoNumero = txtIdNumeroDos.value;
+	//segundoNumero = txtIdNumeroDos.value;
 	segundoNumero = parseInt(segundoNumero);
 
 	dividendo = txtIdNumeroDividendo.value;
@@ -26,6 +26,7 @@ function SacarResto()
 	resto = dividendo % divisor;
 
 	alert("El resto es de: " + resto);
+
 	/*testing
 	var dato;
 
