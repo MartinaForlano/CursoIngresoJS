@@ -1,3 +1,4 @@
+//Forlano, TP Ferrete Iluminación.
 /*4.	Para el departamento de iluminación:
 Tomando en cuenta que todas las lámparas están en oferta al mismo precio de $35 pesos final.
 A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
@@ -10,13 +11,81 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+	//Versión Switch (sin terminar)
+
+	var precioEnCantidad;
+ 	var cantidadLamparas;
+ 	var precioUnitario;
+ 	var descuentoLamparitas;
+ 	var precioFinal;
+ 	var marcaLamparitas;
+ 	var iibb;
+
+
+ 	cantidadLamparas = txtIdCantidad.value;
+ 	cantidadLamparas = parseInt(cantidadLamparas);
+
+ 	marcaLamparitas = Marca.value;
+
+ 	precioUnitario = 35;
+ 	precioEnCantidad = precioUnitario * cantidadLamparas;
+
+	switch(marcaLamparitas)
+	{
+		case "ArgentinaLuz":
+			switch(cantidadLamparas)
+			{		
+				case 5:
+					descuentoLamparitas = 40;
+						break;
+				case 4:
+						descuentoLamparitas = 25;
+					break;
+				case 3:
+					descuentoLamparitas = 15;
+						break;
+			}
+		case "FelipeLamparas":
+			switch(cantidadLamparas)
+			{
+				case 4:
+					descuentoLamparitas = 25;
+						break;
+				case 3:
+					descuentoLamparitas = 10;
+						break;
+			}
+
+		default:
+			if(cantidadLamparas>5)
+			{
+				descuentoLamparitas = 50;
+			}
+				break;
+	}
+	precioFinal = (precioEnCantidad * descuentoLamparitas)/100;
+	txtIdprecioDescuento.value=precioFinal;
+
+		if(precioFinal>120)
+		{
+			iibb= (precioFinal * precioEnCantidad*10/100);
+			precioFinal = iibb + precioFinal;
+
+			alert("Usted pago "+ precioFinal+" de IIBB.”, siendo "+ iibb+" el impuesto que se pagó.")
+		}
+
+	}
+
+
+ 	/* VERSIÓN IF ELSE
  	var precioEnCantidad;
  	var cantidadLamparas;
  	var precioUnitario;
  	var descuentoLamparitas;
  	var precioFinal;
  	var marcaLamparitas;
- 	var porcentaje;
+ 	var iibb;
+
 
  	cantidadLamparas = txtIdCantidad.value;
  	cantidadLamparas = parseInt(cantidadLamparas);
@@ -40,34 +109,45 @@ function CalcularPrecio ()
  			{
 		 		descuentoLamparitas= 30;
  			}
- 		}
- 		if(cantidadLamparas == 4)
+ 		}else
  		{
- 			if(marcaLamparitas == "ArgentinaLuz" || marcaLamparitas == "FelipeLamparas")
+ 			if(cantidadLamparas == 4)
  			{
-		 		descuentoLamparitas= 25;
- 			}else
- 			{
-		 		descuentoLamparitas = 20;
- 			}
- 		}
- 		if(cantidadLamparas==3)
- 		{
- 			if(marcaLamparitas=="ArgentinaLuz")
- 			{
-		 		descuentoLamparitas = 15;
- 			}else
- 			{
- 				if(marcaLamparitas == "FelipeLamparas")
- 				{
-			 		descuentoLamparitas = 10;
- 				}else
- 				{
-			 		descuentoLamparitas = 5;
- 				}
- 			}
- 		}
+	 			if(marcaLamparitas == "ArgentinaLuz" || marcaLamparitas == "FelipeLamparas")
+	 			{
+			 		descuentoLamparitas= 25;
+	 			}else
+	 			{
+			 		descuentoLamparitas = 20;
+	 		}else
+	 		{
+	 			if(cantidadLamparas==3)
+	 			{
+	 				if(marcaLamparitas=="ArgentinaLuz")
+ 					{
+		 				descuentoLamparitas = 15;
+ 					}else
+ 					{
+ 						if(marcaLamparitas == "FelipeLamparas")
+ 						{
+			 				descuentoLamparitas = 10;
+ 						}else
+ 						{
+			 				descuentoLamparitas = 5;
+ 						}
+ 				}	
+	 		}
+ 		}	
  	}
 precioFinal = (precioEnCantidad * descuentoLamparitas)/100;
 txtIdprecioDescuento.value=precioFinal;
-}
+
+	if(precioFinal>120)
+	{
+		iibb= (precioFinal * precioEnCantidad*10/100);
+		precioFinal = iibb + precioFinal;
+
+		alert("Usted pago "+ precioFinal+" de IIBB.”, siendo "+ iibb+" el impuesto que se pagó.")
+	}
+	*/
+//}

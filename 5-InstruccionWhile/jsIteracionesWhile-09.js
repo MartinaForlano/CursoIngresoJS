@@ -17,5 +17,5 @@ function mostrar()
 		respuesta=prompt("desea continuar?");
 	}
 	txtIdMaximo.value=numeroMaximo;
-	txtIdMinimmo.value=numeroMinimo;
+	txtIdMinimo.value=numeroMinimo;
 }//FIN DE LA FUNCIÓN
