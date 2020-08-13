@@ -1,6 +1,83 @@
 /*Forlano, while 4 (corregido)
 al presionar el botón 
 pedir un número entre 0 y 9 inclusive.*/
+
+function mostrar()
+{
+	var numeroIngresado;
+
+	numeroIngresado=prompt("Ingrese un numero entre 0 y 9");
+
+	while(isNaN(numeroIngresado)==true || numeroIngresado<0 || numeroIngresado>10)
+	{
+		numeroIngresado=prompt("Error.Ingrese un numero entre 0 y 9");
+	}
+
+	txtIdNumero.value=numeroIngresado;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function mostrar()
 {
 	var numeroIngresado;
@@ -11,7 +88,7 @@ function mostrar()
 	while(numeroIngresado<0 || numeroIngresado>9)
 	{
 		alert("El numero no  está entre 0 o 9");
-		numeroIngresado = prompt("quiere ingresar otro numero?");
+		numeroIngresado = prompt("Ingrese un número entre 0 y 9");
 	}
 	txtIdNumero.value = numeroIngresado;
 }//FIN DE LA FUNCIÓN

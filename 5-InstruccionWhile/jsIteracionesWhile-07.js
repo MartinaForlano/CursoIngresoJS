@@ -2,6 +2,93 @@
 Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
 e informar la suma acumulada y el promedio.
 */
+
+function mostrar()
+{
+
+	var respuesta;
+	var acumulador;
+	var contador;
+	var numeroIngresado;
+
+	contador=0;
+	acumulador=0;
+	respuesta='si';
+
+	while(respuesta=='si')
+	{
+		numeroIngresado=prompt("Ingrese los numeros que quiera sumar.")
+		numeroIngresado=parseInt(numeroIngresado);
+		acumulador=acumulador+numeroIngresado;
+		contador++;
+		respuesta=prompt("Quiere seguir ingresando numeros?");
+	}
+	
+
+	txtIdSuma.value=acumulador;
+	txtIdPromedio.value=acumulador/contador;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function mostrar()
 {
 	var contador;
@@ -25,3 +112,4 @@ function mostrar()
 	txtIdPromedio.value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
+*/
